@@ -3,15 +3,18 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Drops.Views;
 
+
 namespace Drops
 {
     public partial class App : Application
     {
         public App()
         {
+
             InitializeComponent();
 
-            MainPage = new MapPage();
+            MainPage = new NavigationPage(new MapPage());
+
         }
 
         protected override void OnStart()
