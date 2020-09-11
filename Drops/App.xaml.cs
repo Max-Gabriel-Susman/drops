@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Drops.Views;
 
 namespace Drops
 {
@@ -10,7 +11,7 @@ namespace Drops
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new MapPage();
         }
 
         protected override void OnStart()

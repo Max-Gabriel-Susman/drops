@@ -1,9 +1,13 @@
-﻿<Properties StartupConfiguration="{50B82791-D9F0-4FF6-A21E-D00691CC0292}|Default">
+﻿<Properties StartupConfiguration="{84869017-754A-4353-91F2-B6C28256F9C5}|Default">
   <MonoDevelop.Ide.ItemProperties.Drops.Android PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Drops/Views/MainPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Drops.Android/MainActivity.cs">
     <Files>
-      <File FileName="Drops/MainPage.xaml" Line="1" Column="1" />
-      <File FileName="Drops/Views/MainPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Drops/Views/MapPage.xaml" Line="1" Column="1" />
+      <File FileName="Drops/Views/MapPage.xaml.cs" Line="3" Column="1" />
+      <File FileName="Drops/App.xaml" Line="1" Column="1" />
+      <File FileName="Drops/App.xaml.cs" Line="4" Column="19" />
+      <File FileName="Drops.Android/Properties/AndroidManifest.xml" />
+      <File FileName="Drops.Android/MainActivity.cs" Line="20" Column="15" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,22 +18,20 @@
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
               <Node name="Views" expanded="True">
-                <Node name="MainPage.xaml" expanded="True">
-                  <Node name="MainPage.xaml.cs" selected="True" />
-                </Node>
+                <Node name="MapPage.xaml" expanded="True" />
               </Node>
+              <Node name="App.xaml" expanded="True" />
             </Node>
             <Node name="Drops.Android" expanded="True">
-              <Node name="Packages" expanded="True" />
-            </Node>
-            <Node name="Drops.iOS" expanded="True">
-              <Node name="Packages" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="MainActivity.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Drops.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.1D37476C-4497-4E06-A3CB-7F80C4290FAE" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

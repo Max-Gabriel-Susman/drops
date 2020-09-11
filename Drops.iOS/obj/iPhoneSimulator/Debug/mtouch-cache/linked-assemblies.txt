@@ -23,5 +23,7 @@ RemoveDynamicRegistrar:false
 /Users/MGS/Projects/Drops/Drops.iOS/bin/iPhoneSimulator/Debug/Drops.iOS.app:/Users/MGS/Projects/Drops/Drops.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.Web.Services.dll
 /Users/MGS/Projects/Drops/Drops.iOS/bin/iPhoneSimulator/Debug/Drops.iOS.app:/Users/MGS/Projects/Drops/Drops.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.Xml.Linq.dll
 /Users/MGS/Projects/Drops/Drops.iOS/bin/iPhoneSimulator/Debug/Drops.iOS.app:/Users/MGS/Projects/Drops/Drops.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/Xamarin.Forms.Platform.dll
+/Users/MGS/Projects/Drops/Drops.iOS/bin/iPhoneSimulator/Debug/Drops.iOS.app:/Users/MGS/Projects/Drops/Drops.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/Xamarin.Forms.Maps.iOS.dll
+/Users/MGS/Projects/Drops/Drops.iOS/bin/iPhoneSimulator/Debug/Drops.iOS.app:/Users/MGS/Projects/Drops/Drops.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/Xamarin.Forms.Maps.dll
 /Users/MGS/Projects/Drops/Drops.iOS/bin/iPhoneSimulator/Debug/Drops.iOS.app:/Users/MGS/Projects/Drops/Drops.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/Drops.dll
 /Users/MGS/Projects/Drops/Drops.iOS/bin/iPhoneSimulator/Debug/Drops.iOS.app:/Users/MGS/Projects/Drops/Drops.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/Xamarin.Forms.Xaml.dll
