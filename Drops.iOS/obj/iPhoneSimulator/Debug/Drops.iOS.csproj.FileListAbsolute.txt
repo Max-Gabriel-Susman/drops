@@ -58,3 +58,9 @@
 /Users/MGS/Projects/Drops/Drops.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/coremlc/_PartialAppManifest.items
 /Users/MGS/Projects/Drops/Drops.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/coremlc/_BundleResourceWithLogicalName.items
 /Users/MGS/Projects/Drops/Drops.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/optimized/
+/Users/MGS/Projects/Drops/Drops.iOS/bin/iPhoneSimulator/Debug/SQLite-net.dll
+/Users/MGS/Projects/Drops/Drops.iOS/bin/iPhoneSimulator/Debug/SQLitePCLRaw.batteries_v2.dll
+/Users/MGS/Projects/Drops/Drops.iOS/bin/iPhoneSimulator/Debug/SQLitePCLRaw.nativelibrary.dll
+/Users/MGS/Projects/Drops/Drops.iOS/bin/iPhoneSimulator/Debug/SQLitePCLRaw.core.dll
+/Users/MGS/Projects/Drops/Drops.iOS/bin/iPhoneSimulator/Debug/SQLitePCLRaw.provider.dynamic_cdecl.dll
+/Users/MGS/Projects/Drops/Drops.iOS/bin/iPhoneSimulator/Debug/System.Runtime.CompilerServices.Unsafe.dll

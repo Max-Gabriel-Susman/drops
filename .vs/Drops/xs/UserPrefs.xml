@@ -1,11 +1,11 @@
-﻿<Properties StartupConfiguration="{50B82791-D9F0-4FF6-A21E-D00691CC0292}|Default">
+﻿<Properties StartupConfiguration="{84869017-754A-4353-91F2-B6C28256F9C5}|Default">
   <MonoDevelop.Ide.ItemProperties.Drops.Android PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Drops/Views/PeopleListViewPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Drops/App.xaml.cs">
     <Files>
       <File FileName="Drops/Views/MapPage.xaml" Line="31" Column="51" />
-      <File FileName="Drops/Views/MapPage.xaml.cs" Line="57" Column="71" />
-      <File FileName="Drops/App.xaml" />
-      <File FileName="Drops/App.xaml.cs" />
+      <File FileName="Drops/Views/MapPage.xaml.cs" Line="44" Column="16" />
+      <File FileName="Drops/App.xaml" Line="1" Column="1" />
+      <File FileName="Drops/App.xaml.cs" Line="19" Column="66" />
       <File FileName="Drops.Android/Properties/AndroidManifest.xml" />
       <File FileName="Drops.Android/MainActivity.cs" />
       <File FileName="Drops/Views/OptionsListViewPage.xaml" />
@@ -15,15 +15,25 @@
       <File FileName="Drops/Views/DropListViewpage.xaml" Line="2" Column="149" />
       <File FileName="Drops/Views/DropListViewpage.xaml.cs" Line="27" Column="66" />
       <File FileName="Drops/Views/SearchResultsListViewPage.xaml" Line="17" Column="15" />
-      <File FileName="Drops/Views/SearchResultsListViewPage.xaml.cs" />
+      <File FileName="Drops/Views/SearchResultsListViewPage.xaml.cs" Line="16" Column="62" />
       <File FileName="Drops/Models/Drop.cs" />
       <File FileName="Drops/Models/DropMap.cs" />
-      <File FileName="Drops/AssemblyInfo.cs" />
       <File FileName="Drops/Views/DropDetailViewPage.xaml" Line="4" Column="32" />
       <File FileName="Drops/Views/DropDetailViewPage.xaml.cs" Line="9" Column="9" />
       <File FileName="Drops/Models/Option.cs" />
-      <File FileName="Drops/Views/PeopleListViewPage.xaml" Line="1" Column="1" />
+      <File FileName="Drops/Views/PeopleListViewPage.xaml" Line="4" Column="32" />
       <File FileName="Drops/Views/PeopleListViewPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Drops/Data/TodoItemDatabase.cs" Line="14" Column="56" />
+      <File FileName="Drops/Models/TodoItem.cs" Line="14" Column="1" />
+      <File FileName="Drops/TaskExtensions.cs" Line="15" Column="10" />
+      <File FileName="Drops/Constants.cs" Line="27" Column="6" />
+      <File FileName="Drops/Views/TodoItemPageCS.cs" Line="3" Column="20" />
+      <File FileName="Drops/Views/TodoListPageCS.cs" Line="5" Column="1" />
+      <File FileName="Drops/Views/TodoItemPage.xaml" Line="13" Column="19" />
+      <File FileName="Drops/Views/TodoItemPage.xaml.cs" Line="18" Column="23" />
+      <File FileName="Drops/Views/TodoListPage.xaml" Line="2" Column="150" />
+      <File FileName="Drops/Views/TodoListPage.xaml.cs" Line="4" Column="20" />
+      <File FileName="../../../../Library/Frameworks/Mono.framework/Versions/6.12.0/lib/mono/msbuild/Current/bin/Microsoft.Common.CurrentVersion.targets" Line="2101" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -33,19 +43,13 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
+              <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="DropDetailViewPage.xaml" expanded="True" />
-                <Node name="DropListViewpage.xaml" expanded="True" />
-                <Node name="MapPage.xaml" expanded="True" />
-                <Node name="OptionsDetailViewPage.xaml" expanded="True" />
-                <Node name="OptionsListViewPage.xaml" expanded="True" />
-                <Node name="PeopleListViewPage.xaml" expanded="True">
-                  <Node name="PeopleListViewPage.xaml.cs" selected="True" />
-                </Node>
-                <Node name="SearchResultsListViewPage.xaml" expanded="True" />
+                <Node name="TodoItemPage.xaml" expanded="True" />
+                <Node name="TodoListPage.xaml" expanded="True" />
               </Node>
-              <Node name="App.xaml" expanded="True" />
+              <Node name="App.xaml.cs" selected="True" />
             </Node>
           </Node>
         </State>

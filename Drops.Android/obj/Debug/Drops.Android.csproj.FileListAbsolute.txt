@@ -532,3 +532,11 @@
 /Users/MGS/Projects/Drops/Drops.Android/obj/Debug/stamp/_GenerateJavaStubs.stamp
 /Users/MGS/Projects/Drops/Drops.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/MGS/Projects/Drops/Drops.Android/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
+/Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/SQLite-net.dll
+/Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/SQLitePCLRaw.batteries_v2.dll
+/Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/SQLitePCLRaw.core.dll
+/Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/SQLitePCLRaw.lib.e_sqlite3.android.dll
+/Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/SQLitePCLRaw.provider.e_sqlite3.dll
+/Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/System.Buffers.dll
+/Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/System.Memory.dll
+/Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/System.Runtime.CompilerServices.Unsafe.dll
