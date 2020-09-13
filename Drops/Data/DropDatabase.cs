@@ -5,10 +5,13 @@ using System.Threading.Tasks;
 using SQLite;
 using Drops.Models;
 
+
 namespace Drops.Data
 {
-    public class TodoItemDatabase
+    public class DropDatabase
     {
+
+        // all of this should be reusable
         static readonly Lazy<SQLiteAsyncConnection> lazyInitializer = new Lazy<SQLiteAsyncConnection>(() =>
         {
             return new SQLiteAsyncConnection(Constants.DatabasePath, Constants.Flags);
@@ -17,7 +20,8 @@ namespace Drops.Data
         static SQLiteAsyncConnection Database => lazyInitializer.Value;
         static bool initialized = false;
 
-        public TodoItemDatabase()
+        // Constructor(s)
+        public DropDatabase()
         {
             InitializeAsync().SafeFireAndForget(false);
         }
@@ -36,22 +40,23 @@ namespace Drops.Data
 
 
         // CRUD Methods
-        public Task<List<TodoItem>> GetItemsAsync()
+        // Get 
+        public Task<List<Drop>> GetDropsAsync()
         {
-            return Database.Table<TodoItem>().ToListAsync();
+            return Database.Table<Drop>().ToListAsync();
         }
 
-        public Task<List<TodoItem>> GetItemsNotDoneAsync()
+        public Task<List<Drop>> GetDropsNotDoneAsync()
         {
-            return Database.QueryAsync<TodoItem>("SELECT * FROM [TodoItem] WHERE [Done] = 0");
+            return Database.QueryAsync<Drop>("SELECT * FROM [TodoItem] WHERE [Done] = 0");
         }
 
-        public Task<TodoItem> GetItemAsync(int id)
+        public Task<Drop> GetDropAsync(int id)
         {
-            return Database.Table<TodoItem>().Where(i => i.ID == id).FirstOrDefaultAsync();
+            return Database.Table<Drop>().Where(i => i.ID == id).FirstOrDefaultAsync();
         }
 
-        public Task<int> SaveItemAsync(TodoItem item)
+        public Task<int> SaveDropAsync(Drop item)
         {
             if (item.ID != 0)
             {
@@ -63,7 +68,7 @@ namespace Drops.Data
             }
         }
 
-        public Task<int> DeleteItemAsync(TodoItem item)
+        public Task<int> DeleteDropAsync(TodoItem item)
         {
             return Database.DeleteAsync(item);
         }

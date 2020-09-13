@@ -9,6 +9,7 @@ namespace Drops.Views
     {
         public TodoItemPageCS()
         {
+            // UIElement Configs
             Title = "Todo Item";
 
             var nameEntry = new Entry();

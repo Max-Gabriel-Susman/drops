@@ -6,6 +6,7 @@ namespace Drops
 {
     public static class Constants
     {
+        // let's store DropDB data elsewhere
         public const string DatabaseFilename = "TodoSQLite.db3";
 
         public const SQLite.SQLiteOpenFlags Flags =

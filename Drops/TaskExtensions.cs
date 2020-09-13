@@ -12,7 +12,7 @@ namespace Drops
         public static async void SafeFireAndForget(this Task task,
             bool returnToCallingContext,
             Action<Exception> onException = null)
-        {
+        { 
             try
             {
                 await task.ConfigureAwait(returnToCallingContext);

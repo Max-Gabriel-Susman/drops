@@ -7,11 +7,13 @@ namespace Drops.Views
 {
     public partial class TodoItemPage : ContentPage
     {
+        // Constructor(s)
         public TodoItemPage()
         {
             InitializeComponent();
         }
 
+        // Event Handler Methods
         async void OnSaveClicked(object sender, EventArgs e)
         {
             var todoItem = (TodoItem)BindingContext;

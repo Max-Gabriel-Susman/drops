@@ -7,10 +7,12 @@ namespace Drops.Views
 {
     public class TodoListPageCS : ContentPage
     {
+        // Why is this one declared outside of the constructor?, do they want a default empty listview in the event init fails?
         ListView listView;
 
         public TodoListPageCS()
         {
+            // UIElement Configs
             Title = "Todo";
 
             var toolbarItem = new ToolbarItem
@@ -72,6 +74,7 @@ namespace Drops.Views
             Content = listView;
         }
 
+        // Event Handler
         protected override async void OnAppearing()
         {
             base.OnAppearing();

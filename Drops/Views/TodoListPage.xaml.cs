@@ -8,11 +8,13 @@ namespace Drops.Views
 {
     public partial class TodoListPage : ContentPage
     {
+        // Constructor(s)
         public TodoListPage()
         {
             InitializeComponent();
         }
 
+        // Event Handler Methods
         protected override async void OnAppearing()
         {
             base.OnAppearing();
