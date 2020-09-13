@@ -4,41 +4,38 @@ using Drops.Data;
 using Drops.Models; // prabably don't need
 using Drops.Views;
 
-[assembly: XamlCompilation(XamlCompilationOptions.Compile)] 
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)] // used to be located in AssemblyInfo.CS, looks like I don't need it in a separate file though? maybe it's best practice to store the attribute in a separate classfile and the example wher I saw it in App.Xaml.cs was for the sake of brevity?
 namespace Drops
 {
     public partial class App : Application
     {
         // we're gonna want to create an analog of the for DropDatabase
-        static TodoItemDatabase database;
+        static DropDatabase database;
 
+        // Constructor(s)
         public App()
         {
+
             InitializeComponent();
 
-            // we can get rid of all of this shit
-            var nav = new NavigationPage(new TodoListPage());
-            // nav.BarBackgroundColor = (Color)App.Current.Resources["primaryGreen"]; // primalry green is mia wtf
-            nav.BarBackgroundColor = Color.Default;
-            nav.BarTextColor = Color.Black;
-
-            // MainPage is the rootpage of an application
-            MainPage = nav;
+            MainPage = new NavigationPage(new MapPage());
+            
         }
 
-        public static TodoItemDatabase Database
+        public static DropDatabase Database
         {
             get
             {
                 if (database == null)
                 {
                     // we're gonna wanna change this to DropDataBase
-                    database = new TodoItemDatabase();
+                    database = new DropDatabase();
                 }
                 return database;
             }
         }
 
+        // LifeCycle Methods
         protected override void OnStart()
         {
 

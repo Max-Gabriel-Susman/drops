@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{84869017-754A-4353-91F2-B6C28256F9C5}|Default">
   <MonoDevelop.Ide.ItemProperties.Drops.Android PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Drops/Data/TodoItemDatabase.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Drops/Data/DropDatabase.cs">
     <Files>
       <File FileName="Drops/Views/MapPage.xaml" Line="31" Column="51" />
       <File FileName="Drops/Views/MapPage.xaml.cs" Line="44" Column="16" />
       <File FileName="Drops/App.xaml" Line="1" Column="1" />
-      <File FileName="Drops/App.xaml.cs" Line="12" Column="72" />
+      <File FileName="Drops/App.xaml.cs" Line="38" Column="22" />
       <File FileName="Drops.Android/Properties/AndroidManifest.xml" />
       <File FileName="Drops.Android/MainActivity.cs" />
       <File FileName="Drops/Views/OptionsListViewPage.xaml" />
@@ -16,25 +16,17 @@
       <File FileName="Drops/Views/DropListViewpage.xaml.cs" Line="27" Column="66" />
       <File FileName="Drops/Views/SearchResultsListViewPage.xaml" Line="17" Column="15" />
       <File FileName="Drops/Views/SearchResultsListViewPage.xaml.cs" Line="16" Column="62" />
-      <File FileName="Drops/Models/Drop.cs" />
+      <File FileName="Drops/Models/Drop.cs" Line="34" Column="22" />
       <File FileName="Drops/Models/DropMap.cs" />
       <File FileName="Drops/Views/DropDetailViewPage.xaml" Line="4" Column="32" />
       <File FileName="Drops/Views/DropDetailViewPage.xaml.cs" Line="9" Column="9" />
       <File FileName="Drops/Models/Option.cs" />
       <File FileName="Drops/Views/PeopleListViewPage.xaml" Line="4" Column="32" />
       <File FileName="Drops/Views/PeopleListViewPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="Drops/Data/TodoItemDatabase.cs" Line="71" Column="2" />
-      <File FileName="Drops/Models/TodoItem.cs" Line="14" Column="1" />
       <File FileName="Drops/TaskExtensions.cs" Line="15" Column="11" />
       <File FileName="Drops/Constants.cs" Line="9" Column="45" />
-      <File FileName="Drops/Views/TodoItemPageCS.cs" Line="11" Column="10" />
-      <File FileName="Drops/Views/TodoListPageCS.cs" Line="15" Column="33" />
-      <File FileName="Drops/Views/TodoItemPage.xaml" Line="13" Column="19" />
-      <File FileName="Drops/Views/TodoItemPage.xaml.cs" Line="10" Column="26" />
-      <File FileName="Drops/Views/TodoListPage.xaml" Line="4" Column="30" />
-      <File FileName="Drops/Views/TodoListPage.xaml.cs" Line="11" Column="26" />
       <File FileName="../../../../Library/Frameworks/Mono.framework/Versions/6.12.0/lib/mono/msbuild/Current/bin/Microsoft.Common.CurrentVersion.targets" Line="2101" Column="5" />
-      <File FileName="Drops/Data/DropDatabase.cs" Line="1" Column="1" />
+      <File FileName="Drops/Data/DropDatabase.cs" Line="71" Column="42" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -45,12 +37,11 @@
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
               <Node name="Data" expanded="True">
-                <Node name="TodoItemDatabase.cs" selected="True" />
+                <Node name="DropDatabase.cs" selected="True" />
               </Node>
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="TodoItemPage.xaml" expanded="True" />
-                <Node name="TodoListPage.xaml" expanded="True" />
+                <Node name="PeopleListViewPage.xaml" expanded="True" />
               </Node>
             </Node>
           </Node>

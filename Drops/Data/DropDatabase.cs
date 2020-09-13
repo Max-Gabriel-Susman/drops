@@ -30,9 +30,9 @@ namespace Drops.Data
         {
             if (!initialized)
             {
-                if (!Database.TableMappings.Any(m => m.MappedType.Name == typeof(TodoItem).Name))
+                if (!Database.TableMappings.Any(m => m.MappedType.Name == typeof(Drop).Name))
                 {
-                    await Database.CreateTablesAsync(CreateFlags.None, typeof(TodoItem)).ConfigureAwait(false);
+                    await Database.CreateTablesAsync(CreateFlags.None, typeof(Drop)).ConfigureAwait(false);
                 }
                 initialized = true;
             }
@@ -40,22 +40,25 @@ namespace Drops.Data
 
 
         // CRUD Methods
-        // Get 
+        // Get Drops
         public Task<List<Drop>> GetDropsAsync()
         {
             return Database.Table<Drop>().ToListAsync();
         }
 
-        public Task<List<Drop>> GetDropsNotDoneAsync()
-        {
-            return Database.QueryAsync<Drop>("SELECT * FROM [TodoItem] WHERE [Done] = 0");
-        }
+        // this is an example of how we could filter the drop queries, we'll leave this around for later 
+        //public Task<List<Drop>> GetDropsNotDoneAsync()
+        //{
+        //    return Database.QueryAsync<Drop>("SELECT * FROM [TodoItem] WHERE [Done] = 0");
+        //}
 
+        // Get Drop
         public Task<Drop> GetDropAsync(int id)
         {
             return Database.Table<Drop>().Where(i => i.ID == id).FirstOrDefaultAsync();
         }
 
+        // Create Drop
         public Task<int> SaveDropAsync(Drop item)
         {
             if (item.ID != 0)
@@ -68,7 +71,8 @@ namespace Drops.Data
             }
         }
 
-        public Task<int> DeleteDropAsync(TodoItem item)
+        // Delete Drop
+        public Task<int> DeleteDropAsync(Drop item)
         {
             return Database.DeleteAsync(item);
         }
