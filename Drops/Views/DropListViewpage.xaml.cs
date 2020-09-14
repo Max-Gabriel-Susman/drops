@@ -1,8 +1,12 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using Xamarin.Forms;
 using Drops.Models;
 using Xamarin.Forms.Maps;
+using SQLite;
+using System.Threading.Tasks;
+using Drops.Data;
 
 namespace Drops.Views
 {
@@ -14,7 +18,12 @@ namespace Drops.Views
         {
             InitializeComponent();
 
+            // we need to figure out how to implement swipe to delete, is this crossplatform?
             dropsListView.ItemsSource = DropMap.Drops;
+            //dropsListView.ItemsSource = App.Database.GetDropsAsync();
+
+            // using statement has a distinct set of functionality from using directive
+            // using(SQLiteConnection conn = new SQLiteConnection(App.Fi))
 
             BindingContext = this; // what is up with binding context  
         }
@@ -31,13 +40,13 @@ namespace Drops.Views
             }
         }
 
-        // using keyword?
-        protected override void OnAppearing()
+        protected override async void OnAppearing()
         {
             base.OnAppearing();
 
-            // optionsListView.ItemsSource = new List<string> { "this", "is", "a", "test"};
 
+            // I think the issue here is I got a big ol dick
+            //dropsListView.ItemsSource = await App.database.GetDropsAsync();
         }
     }
 }

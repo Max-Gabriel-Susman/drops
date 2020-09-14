@@ -10,15 +10,17 @@ namespace Drops.Models
         // Constructor(s)
         public Drop() : base()
         {
+            // how would we set ID
 
         }
 
         // Properties
+        // perhaps the issue is that not all of these props are nonnull
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
         public string Name { get; set; }
-        public string Notes { get; set; }
-        public bool Done { get; set; }
+        
+        
 
         // Methods
         public override string ToString()
@@ -29,14 +31,3 @@ namespace Drops.Models
     }
 }
 
-//namespace Drops.Models
-//{
-//    public class TodoItem
-//    {
-        //[PrimaryKey, AutoIncrement]
-        //public int ID { get; set; }
-        //public string Name { get; set; }
-        //public string Notes { get; set; }
-        //public bool Done { get; set; }
-//    }
-//}

@@ -20,13 +20,7 @@ namespace Drops.Views
             dropMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(41.7377780, -111.8308330), Distance.FromMiles(1.0)));
         }
 
-        // MARK: - UIElements
-
-
-
         // MARK: - Methods
-        // I think best practice is going to be migrating these methods to another class?
-        // Handles Navigation to SearchResultsListViewPage
         async void OnSearchBarButtonClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new SearchResultsListViewPage
@@ -38,6 +32,7 @@ namespace Drops.Views
         // Handles Navigation to OptionsListViewPage
         async void OnOptionsButtonClicked(object sender, EventArgs e)
         {
+
             await Navigation.PushAsync(new OptionsListViewPage
             {
                 
@@ -47,9 +42,13 @@ namespace Drops.Views
         // Handles Navigation to PinsListViewPage
         async void OnPinsButtonClicked(object sender, EventArgs e)
         {
+
+            
             await Navigation.PushAsync(new DropListViewpage
             {
-
+                // let's save all the drops
+                
+                //App.Database.SaveDropAsync();
             });
         }
 
@@ -79,6 +78,8 @@ namespace Drops.Views
             // Navigate to AppointmentSchedulingPage
         }
 
+        
+
         // Handles Drop Creation
         void OnMapClicked(object sender, MapClickedEventArgs e)
         {
@@ -92,7 +93,10 @@ namespace Drops.Views
 
             dropMap.Pins.Add(drop);
 
+            // this collection is currenly being used to populate list view probably going to get rid of it in the future
+            // and just populate the list view with db data
             DropMap.Drops.Add(drop);
+            
         }
     }
 }

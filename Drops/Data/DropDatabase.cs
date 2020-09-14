@@ -4,77 +4,57 @@ using System.Linq;
 using System.Threading.Tasks;
 using SQLite;
 using Drops.Models;
+using Xamarin.Forms.Maps; // might delete later
 
 
 namespace Drops.Data
 {
     public class DropDatabase
     {
+        // database is declared
+        readonly SQLiteAsyncConnection _database;
 
-        // all of this should be reusable
-        static readonly Lazy<SQLiteAsyncConnection> lazyInitializer = new Lazy<SQLiteAsyncConnection>(() =>
+
+        public DropDatabase(string dbPath)
         {
-            return new SQLiteAsyncConnection(Constants.DatabasePath, Constants.Flags);
-        });
-
-        static SQLiteAsyncConnection Database => lazyInitializer.Value;
-        static bool initialized = false;
-
-        // Constructor(s)
-        public DropDatabase()
-        {
-            InitializeAsync().SafeFireAndForget(false);
+            // database is instantiated
+            _database = new SQLiteAsyncConnection(dbPath);
+            _database.CreateTableAsync<Drop>().Wait();
         }
-
-        async Task InitializeAsync()
-        {
-            if (!initialized)
-            {
-                if (!Database.TableMappings.Any(m => m.MappedType.Name == typeof(Drop).Name))
-                {
-                    await Database.CreateTablesAsync(CreateFlags.None, typeof(Drop)).ConfigureAwait(false);
-                }
-                initialized = true;
-            }
-        }
-
 
         // CRUD Methods
-        // Get Drops
-        public Task<List<Drop>> GetDropsAsync()
+
+        // Read All
+        public Task<List<Drop>> GetNotesAsync()
         {
-            return Database.Table<Drop>().ToListAsync();
+            return _database.Table<Drop>().ToListAsync();
         }
 
-        // this is an example of how we could filter the drop queries, we'll leave this around for later 
-        //public Task<List<Drop>> GetDropsNotDoneAsync()
-        //{
-        //    return Database.QueryAsync<Drop>("SELECT * FROM [TodoItem] WHERE [Done] = 0");
-        //}
-
-        // Get Drop
-        public Task<Drop> GetDropAsync(int id)
+        // Read
+        public Task<Drop> GetNoteAsync(int id)
         {
-            return Database.Table<Drop>().Where(i => i.ID == id).FirstOrDefaultAsync();
+            return _database.Table<Drop>()
+                            .Where(i => i.ID == id)
+                            .FirstOrDefaultAsync();
         }
 
-        // Create Drop
-        public Task<int> SaveDropAsync(Drop item)
+        // Create
+        public Task<int> SaveNoteAsync(Drop drop)
         {
-            if (item.ID != 0)
+            if (drop.ID != 0)
             {
-                return Database.UpdateAsync(item);
+                return _database.UpdateAsync(drop);
             }
             else
             {
-                return Database.InsertAsync(item);
+                return _database.InsertAsync(drop);
             }
         }
 
-        // Delete Drop
-        public Task<int> DeleteDropAsync(Drop item)
+        // Delete
+        public Task<int> DeleteNoteAsync(Drop drop)
         {
-            return Database.DeleteAsync(item);
+            return _database.DeleteAsync(drop);
         }
     }
 }
