@@ -25,13 +25,13 @@ namespace Drops.Data
         // CRUD Methods
 
         // Read All
-        public Task<List<Drop>> GetNotesAsync()
+        public Task<List<Drop>> GetDropsAsync()
         {
             return _database.Table<Drop>().ToListAsync();
         }
 
         // Read
-        public Task<Drop> GetNoteAsync(int id)
+        public Task<Drop> GetDropAsync(int id)
         {
             return _database.Table<Drop>()
                             .Where(i => i.ID == id)
@@ -39,7 +39,7 @@ namespace Drops.Data
         }
 
         // Create
-        public Task<int> SaveNoteAsync(Drop drop)
+        public Task<int> SaveDropAsync(Drop drop)
         {
             if (drop.ID != 0)
             {
@@ -52,7 +52,7 @@ namespace Drops.Data
         }
 
         // Delete
-        public Task<int> DeleteNoteAsync(Drop drop)
+        public Task<int> DeleteDropAsync(Drop drop)
         {
             return _database.DeleteAsync(drop);
         }

@@ -15,9 +15,27 @@ namespace Drops.Views
         // MARK: - Constructors
         public MapPage()
         {
+
             InitializeComponent();
 
+            // Centers map on Logan Utah on App entry, in the future the map will be centered on the users location on app entry
             dropMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(41.7377780, -111.8308330), Distance.FromMiles(1.0)));
+
+            // Pulls the list of drops from the database
+            List<Drop> drops = App.Database.GetDropsAsync().Result;
+
+            // Populates the map with the list of drops pulled from the database
+            for (int i = 0; i < drops.Count; i++)
+            {
+                // Instantiates a pin that will represent a drop from the database
+                dropMap.Pins.Add(new Pin {
+
+                    Position = new Position(drops[i].Latitude, drops[i].Longitude),
+
+                    Label = drops[i].Label
+
+                });
+            }
         }
 
         // MARK: - Methods
@@ -48,7 +66,7 @@ namespace Drops.Views
             {
                 // let's save all the drops
                 
-                //App.Database.SaveDropAsync();
+                // App.Database.SaveDropAsync();
             });
         }
 
@@ -83,20 +101,21 @@ namespace Drops.Views
         // Handles Drop Creation
         void OnMapClicked(object sender, MapClickedEventArgs e)
         {
-
-            var drop = new Drop()
+            // An blank pin is instantiated
+            var pin = new Pin()
             {
+                
                 Position = new Position(e.Position.Latitude, e.Position.Longitude),
 
                 Label = "Unknown"
+
             };
 
-            dropMap.Pins.Add(drop);
+            // The blank pin is placed on the map where the users touch input was registered
+            dropMap.Pins.Add(pin);
 
-            // this collection is currenly being used to populate list view probably going to get rid of it in the future
-            // and just populate the list view with db data
-            DropMap.Drops.Add(drop);
-            
+            // Creates a drop that will be used to represent the new pin inside of the database
+            App.Database.SaveDropAsync(new Drop(pin));
         }
     }
 }

@@ -18,14 +18,9 @@ namespace Drops.Views
         {
             InitializeComponent();
 
-            // we need to figure out how to implement swipe to delete, is this crossplatform?
-            dropsListView.ItemsSource = DropMap.Drops;
-            //dropsListView.ItemsSource = App.Database.GetDropsAsync();
+            dropsListView.ItemsSource = App.Database.GetDropsAsync().Result;
 
-            // using statement has a distinct set of functionality from using directive
-            // using(SQLiteConnection conn = new SQLiteConnection(App.Fi))
-
-            BindingContext = this; // what is up with binding context  
+            BindingContext = this; 
         }
 
         // Handles when the user selects a listView Item
@@ -44,9 +39,6 @@ namespace Drops.Views
         {
             base.OnAppearing();
 
-
-            // I think the issue here is I got a big ol dick
-            //dropsListView.ItemsSource = await App.database.GetDropsAsync();
         }
     }
 }
