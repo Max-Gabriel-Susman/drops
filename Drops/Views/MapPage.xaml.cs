@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+
+// I'll leave them for now but i don't think I'll end up needing these 4 namespaces
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 using Drops.Models;
@@ -25,7 +28,7 @@ namespace Drops.Views
             List<Drop> drops = App.Database.GetDropsAsync().Result;
 
             // Populates the map with the list of drops pulled from the database
-            for (int i = 0; i < drops.Count; i++)
+            for(int i = 0; i < drops.Count; i++)
             {
                 // Instantiates a pin that will represent a drop from the database
                 dropMap.Pins.Add(new Pin {
@@ -77,26 +80,6 @@ namespace Drops.Views
 
             });
         }
-
-        async void HomeOwnerStatusSelection()
-        {
-            string timeEntry;
-
-            string homeOwnerStatus = DisplayActionSheet("Home Owner Status", "Cancel", null, "Not Home", "Not Interested", "Not Qualified", "Credit Check", "Call Back", "Under Contract").Result;
-
-            if (homeOwnerStatus == "Not Interested" || homeOwnerStatus == "UnderContract" || homeOwnerStatus == "Not Home") { }
-
-            else if (homeOwnerStatus == "Come Back Later")
-
-                // invokes TimeEntryPrompt to set a return time for the Technician
-                timeEntry = await DisplayPromptAsync("Question 1", "What's your name?");
-
-            else if (homeOwnerStatus == "Appointment Scheduled") { }
-
-            // Navigate to AppointmentSchedulingPage
-        }
-
-        
 
         // Handles Drop Creation
         void OnMapClicked(object sender, MapClickedEventArgs e)
