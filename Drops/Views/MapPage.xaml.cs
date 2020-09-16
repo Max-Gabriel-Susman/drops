@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,14 +27,16 @@ namespace Drops.Views
 
 
 
-            //// Pulls the list of drops from the database
+            // Pulls the list of drops from the database
             //List<Drop> drops = App.Database.GetDropsAsync().Result;
+            Drops = DropMap.Drops;
 
             //// Populates the map with the list of drops pulled from the database
-            //for(int i = 0; i < drops.Count; i++)
+            //for (int i = 0; i < drops.Count; i++)
             //{
             //    // Instantiates a pin that will represent a drop from the database
-            //    dropMap.Pins.Add(new Pin {
+            //    dropMap.Pins.Add(new Pin
+            //    {
 
             //        Position = new Position(drops[i].Latitude, drops[i].Longitude),
 
@@ -42,6 +45,9 @@ namespace Drops.Views
             //    });
             //}
         }
+
+        // MARK: - Properties
+        ObservableCollection<Drop> Drops { get; set; }
 
         // MARK: - Methods
         async void OnSearchBarButtonClicked(object sender, EventArgs e)
@@ -66,6 +72,7 @@ namespace Drops.Views
         async void OnPinsButtonClicked(object sender, EventArgs e)
         {
 
+            dropMap.Pins.Clear();
             
             await Navigation.PushAsync(new MainPage
             {
@@ -98,9 +105,9 @@ namespace Drops.Views
 
             // The blank pin is placed on the map where the users touch input was registered
             dropMap.Pins.Add(pin);
-            DropMap.Drops.Add(new Drop());
-            // Creates a drop that will be used to represent the new pin inside of the database
-            // App.Database.SaveDropAsync(new Drop(pin));
+            DropMap.Drops.Add(new Drop(pin));
+
+            
         }
     }
 }

@@ -12,13 +12,14 @@ namespace Drops.Models
         // Constructor(s)        
         public Drop() { } // we need this to use as an arg for the generics in DropDatabase
 
-        static Drop()
-        {
-            DropsCreated = 0;
-        }
+        //static Drop()
+        //{
+        //    // DropsCreated = 0;
+        //}
 
         public Drop(Pin pin)
         {
+            System.Diagnostics.Debug.WriteLine("Instantiation began");
             // how would we set ID
             //this.ID = App.Database.GetDropsCreated();  
             this.Latitude = pin.Position.Latitude;
@@ -35,7 +36,7 @@ namespace Drops.Models
         public string Label { get; set; }
 
         // Will implement with persistence later
-        public static int DropsCreated { get; set; }
+        //public static int DropsCreated { get; set; }
         
         // Methods
         public override string ToString()

@@ -12,6 +12,7 @@ namespace Drops.ViewModels
 {
     public class MainPageViewModel : BindableObject
     {
+        
 
         public ObservableCollection<Drop> Drops { get; set; } // = DropMap.Drops;
 
@@ -50,6 +51,17 @@ namespace Drops.ViewModels
             var drop = obj as Drop;
             
             Drops.Remove(drop);
+
+            
         }
+
+        //async void OnLoginButtonClicked(object sender, EventArgs e)
+        //{
+
+        //    await Navigation.PushAsync(new MainPage
+        //    {
+
+        //    });
+        //}
     }
 }

@@ -18,5 +18,8 @@ namespace Drops.Views
             InitializeComponent();
             BindingContext = new MainPageViewModel();
         }
+
+     
+
     }
 }
