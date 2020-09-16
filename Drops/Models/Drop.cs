@@ -1,22 +1,26 @@
 ﻿using System;
 using Xamarin.Forms.Maps;
 using SQLite;
-
+using System.Collections;
 
 // let's try and use Drop as an intermediary between Pins and sqlite
 namespace Drops.Models
 {
     // public class Drop : Pin
-    public class Drop 
+    public class Drop // : IEnumerable
     {
-        // Constructor(s)
-        // public Drop() : base()
-        // Drops are to be exclusively created from existing pins and pins may be created from drops
-        public Drop() { } // we should make sure we grok c# generics at some point or another
+        // Constructor(s)        
+        public Drop() { } // we need this to use as an arg for the generics in DropDatabase
+
+        static Drop()
+        {
+            DropsCreated = 0;
+        }
 
         public Drop(Pin pin)
         {
             // how would we set ID
+            //this.ID = App.Database.GetDropsCreated();  
             this.Latitude = pin.Position.Latitude;
             this.Longitude = pin.Position.Longitude;
             this.Label = pin.Label;
@@ -29,9 +33,10 @@ namespace Drops.Models
         public double Latitude { get; set; }
         public double Longitude { get; set; }
         public string Label { get; set; }
-        
-        
 
+        // Will implement with persistence later
+        public static int DropsCreated { get; set; }
+        
         // Methods
         public override string ToString()
         {

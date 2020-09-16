@@ -1,7 +1,10 @@
 ﻿using System;
+using Xamarin.Forms.Maps;
+
+
 namespace Drops.Models
 {
-    public class DropPin
+    public class DropPin : Pin
     {
         public DropPin()
         {

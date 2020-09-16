@@ -5,12 +5,12 @@ using Xamarin.Forms;
 
 namespace Drops.Views
 {
-    public partial class OptionsDetailViewPage : ContentPage
+    public partial class LoginPage : ContentPage
     {
-        public OptionsDetailViewPage()
+        public LoginPage()
         {
             InitializeComponent();
-            // BindingContext = new MainPageViewModel();
+            BindingContext = new LoginPageViewModel();
         }
     }
 }

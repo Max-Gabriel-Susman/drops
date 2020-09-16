@@ -2,6 +2,7 @@
 using Xamarin.Forms.Maps;
 using Drops.Models;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 
 namespace Drops.Models
@@ -9,15 +10,15 @@ namespace Drops.Models
     public class DropMap : Map
     {
 
-        private static List<Drop> drops = new List<Drop>();
+        private static ObservableCollection<Drop> drops = new ObservableCollection<Drop>();
 
-        public static List<Drop> Drops
+        public static ObservableCollection<Drop> Drops
         {
             get { return drops; }
             set { drops = value; }
         }
 
-        public DropMap() { }//: base(MapSpan) { }
+        public DropMap() { }
 
     }
 }

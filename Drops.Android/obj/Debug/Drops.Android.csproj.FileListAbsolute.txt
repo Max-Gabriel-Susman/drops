@@ -56,6 +56,12 @@
 /Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/mscorlib.dll
 /Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/mscorlib.pdb
 /Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/netstandard.dll
+/Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/SQLite-net.dll
+/Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/SQLitePCLRaw.batteries_v2.dll
+/Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/SQLitePCLRaw.core.dll
+/Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/SQLitePCLRaw.lib.e_sqlite3.android.dll
+/Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/SQLitePCLRaw.provider.e_sqlite3.dll
+/Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/System.Buffers.dll
 /Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/System.ComponentModel.Composition.dll
 /Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/System.ComponentModel.Composition.pdb
 /Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/System.Core.dll
@@ -71,6 +77,7 @@
 /Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/System.IO.Compression.FileSystem.dll
 /Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/System.IO.Compression.FileSystem.pdb
 /Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/System.IO.Compression.pdb
+/Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/System.Memory.dll
 /Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/System.Net.Http.dll
 /Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/System.Net.Http.pdb
 /Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/System.Numerics.dll
@@ -78,6 +85,7 @@
 /Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/System.Numerics.Vectors.dll
 /Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/System.Numerics.Vectors.pdb
 /Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/System.pdb
+/Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/System.Runtime.CompilerServices.Unsafe.dll
 /Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/System.Runtime.dll
 /Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/System.Runtime.Serialization.dll
 /Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/System.Runtime.Serialization.pdb
@@ -532,11 +540,3 @@
 /Users/MGS/Projects/Drops/Drops.Android/obj/Debug/stamp/_GenerateJavaStubs.stamp
 /Users/MGS/Projects/Drops/Drops.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/MGS/Projects/Drops/Drops.Android/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
-/Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/SQLite-net.dll
-/Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/SQLitePCLRaw.batteries_v2.dll
-/Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/SQLitePCLRaw.core.dll
-/Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/SQLitePCLRaw.lib.e_sqlite3.android.dll
-/Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/SQLitePCLRaw.provider.e_sqlite3.dll
-/Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/System.Buffers.dll
-/Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/System.Memory.dll
-/Users/MGS/Projects/Drops/Drops.Android/obj/Debug/android/assets/System.Runtime.CompilerServices.Unsafe.dll

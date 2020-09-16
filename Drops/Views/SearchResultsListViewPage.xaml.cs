@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Drops.ViewModels;
 using Xamarin.Forms;
 
 namespace Drops.Views
@@ -9,6 +10,7 @@ namespace Drops.Views
         public SearchResultsListViewPage()
         {
             InitializeComponent();
+            // BindingContext = new MainPageViewModel();
         }
 
         async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)

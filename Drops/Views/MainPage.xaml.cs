@@ -5,16 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using Xamarin.Forms.Maps;
+using Drops.ViewModels;
 
-// at what point should I be implementing additional namespaces?
-namespace Drops
+
+namespace Drops.Views
 {
+
     public partial class MainPage : ContentPage
     {
         public MainPage()
         {
             InitializeComponent();
+            BindingContext = new MainPageViewModel();
         }
     }
 }

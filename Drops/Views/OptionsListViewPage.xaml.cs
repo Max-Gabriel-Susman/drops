@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Xamarin.Forms;
 using Drops.Models;
+using Drops.ViewModels;
 
 namespace Drops.Views
 {
@@ -12,7 +13,7 @@ namespace Drops.Views
         public OptionsListViewPage()
         {
             InitializeComponent();
-
+            // BindingContext = new MainPageViewModel();
             Options = new List<Option>();
 
             Options.Add(new Option

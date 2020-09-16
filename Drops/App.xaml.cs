@@ -20,7 +20,7 @@ namespace Drops
                 if (database == null)
                 {
                     // where is environment defined in notes app?
-                    database = new DropDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Drops.db3"));
+                    database = new DropDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "DropMap.db3"));
                 }
                 return database;
             }
@@ -32,7 +32,8 @@ namespace Drops
 
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MapPage());
+            // MainPage = new NavigationPage(new MapPage());
+            MainPage = new NavigationPage(new LoginPage());
             
         }
 

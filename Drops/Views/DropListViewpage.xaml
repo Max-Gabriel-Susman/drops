@@ -3,9 +3,13 @@
     <StackLayout>
         <Entry Placeholder="Search Drops ... "
                HeightRequest="50"/>
+        <Button Text="delete that shit" Clicked="OnDeleteDrop" />
         <ListView x:Name="dropsListView"
                   Margin="20"
                   ItemSelected="OnListViewItemSelected"
-                  ItemsSource="{Binding DropMap.Drops}"/>
+                  ItemsSource="{Binding drops}">
+            
+        
+        </ListView>
     </StackLayout>
 </ContentPage>

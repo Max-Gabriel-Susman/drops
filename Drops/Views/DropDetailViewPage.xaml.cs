@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using Drops.ViewModels;
 using Xamarin.Forms;
+
 
 namespace Drops.Views
 {
@@ -10,6 +12,7 @@ namespace Drops.Views
         public DropDetailViewPage()
         {
             InitializeComponent();
+            // BindingContext = new MainPageViewModel();
         }
     }
 }
