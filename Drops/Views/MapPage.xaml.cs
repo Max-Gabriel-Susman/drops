@@ -83,6 +83,16 @@ namespace Drops.Views
             });
         }
 
+        
+
+        async void OnAreasButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AreaListViewPage
+            {
+
+            });
+        }
+
         // Handles Drop Creation
         void OnMapClicked(object sender, MapClickedEventArgs e)
         {
@@ -98,7 +108,12 @@ namespace Drops.Views
 
             // The blank pin is placed on the map where the users touch input was registered
             dropMap.Pins.Add(pin);
-            DropMap.Drops.Add(new Drop());
+
+            DropMap.Drops.Add(new Drop(pin));
+
+            //foreach(Drop drop in DropMap.Drops)
+            //    Console.WriteLine(drop.Label);
+            
             // Creates a drop that will be used to represent the new pin inside of the database
             // App.Database.SaveDropAsync(new Drop(pin));
         }

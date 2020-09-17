@@ -4,6 +4,7 @@ using SQLite;
 
 namespace Drops.Models
 {
+    // This classes implmentation is exlusively client-side
     public class Option
     {
         [PrimaryKey, AutoIncrement]

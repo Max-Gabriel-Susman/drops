@@ -7,6 +7,8 @@ namespace Drops.Models
 {
     public class DropPin : Pin
     {
+        // currently unimplemented
+
         public DropPin()
         {
         }

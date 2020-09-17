@@ -19,31 +19,14 @@ namespace Drops.ViewModels
 
         public ICommand DeleteCommand { get; }
 
-        //public ICommand AddCommand { get; }
-
-
         public MainPageViewModel()
         {
 
             Drops = DropMap.Drops;
 
-            // we need a way to remove pins from the map as well
-
             DeleteCommand = new Command(OnDeleteTapped);
 
-            //AddCommand = new Command(AddItmes);
         }
-
-
-        // delete this when appropriate
-        //private void AddItmes(object obj)
-        //{
-
-
-        //    Drop drop = new Drop();
-
-        //    Drops.Add(drop);
-        //}
 
         private void OnDeleteTapped(object obj)
         {

@@ -18,19 +18,23 @@ namespace Drops.Models
 
             this.OwnedAreas = new ObservableCollection<Area>();
 
-            this.SharedAreas = new ObservableCollection<Area>();
+            this.RecievedAreas = new ObservableCollection<Area>();
         }
 
         // Properties
         [PrimaryKey, AutoIncrement]
 
+        public int ID { get; set; }
+
         private string Username { get; set; }
 
         private string Password { get; set; }
 
-        private ObservableCollection<Area> OwnedAreas { get; set; }
+        private ObservableCollection<Area> OwnedAreas = new ObservableCollection<Area>();
 
-        private ObservableCollection<Area> SharedAreas { get; set; }
+        private ObservableCollection<Area> RecievedAreas = new ObservableCollection<Area>();
+
+        private ObservableCollection<Area> AllAreas = new ObservableCollection<Area>();
 
         // Methods
         public void UpdateUsername(string newUsername)
@@ -43,14 +47,20 @@ namespace Drops.Models
             this.Password = newPassword;
         }
 
-        public void CreateArea()
+        public void CreateArea(double latitude, double longitude)
         {
+            Area area = new Area(latitude, longitude);
 
+            OwnedAreas.Add(area);
+
+            AllAreas.Add(area);
         }
 
-        public void ReceiveArea()
+        public void ReceiveArea(Area area)
         {
+            RecievedAreas.Add(area);
 
+            AllAreas.Add(area);
         }
 
         public ObservableCollection<Area> GetAreas()
@@ -59,9 +69,11 @@ namespace Drops.Models
             return this.OwnedAreas;
         }
 
-        //public Area GetArea()
-        //{
-
-        //}
+        // we want 
+    //    public bool GetArea(int id, out Area areaWithID)
+    //    {
+    //        //return this.OwnedAreas.
+    //        return true;
+    //    }
     }
 }
