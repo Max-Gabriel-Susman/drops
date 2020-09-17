@@ -3,6 +3,7 @@ using Xamarin.Forms.Maps;
 using Drops.Models;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using SQLite;
 
 
 namespace Drops.Models
@@ -12,11 +13,8 @@ namespace Drops.Models
 
         private static ObservableCollection<Drop> drops = new ObservableCollection<Drop>();
 
-        public static ObservableCollection<Drop> Drops
-        {
-            get { return drops; }
-            set { drops = value; }
-        }
+        [PrimaryKey, AutoIncrement]
+        public static ObservableCollection<Drop> Drops { get; set; }
 
         public DropMap() { }
 

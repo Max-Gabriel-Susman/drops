@@ -1,5 +1,6 @@
 ﻿using System;
 using Xamarin.Forms.Maps;
+using SQLite;
 
 
 namespace Drops.Models
@@ -9,5 +10,8 @@ namespace Drops.Models
         public DropPin()
         {
         }
+
+        [PrimaryKey, AutoIncrement]
+        public string Property { get; set; }
     }
 }

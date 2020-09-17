@@ -2,8 +2,9 @@
 using Xamarin.Forms.Maps;
 using SQLite;
 using System.Collections;
+using SQLite;
 
-// let's try and use Drop as an intermediary between Pins and sqlite
+
 namespace Drops.Models
 {
     // public class Drop : Pin
