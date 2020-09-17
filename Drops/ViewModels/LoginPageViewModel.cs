@@ -12,28 +12,28 @@ namespace Drops.ViewModels
         {
         }
 
-        async void OnLoginButtonClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new SearchResultsListViewPage
-            {
+        //async void OnLoginButtonClicked(object sender, EventArgs e)
+        //{
+        //    await Navigation.PushAsync(new SearchResultsListViewPage
+        //    {
 
-            });
-        }
+        //    });
+        //}
 
-        async void OnRegistrationButtonClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new SearchResultsListViewPage
-            {
+        //async void OnRegistrationButtonClicked(object sender, EventArgs e)
+        //{
+        //    await Navigation.PushAsync(new SearchResultsListViewPage
+        //    {
 
-            });
-        }
+        //    });
+        //}
 
-        async void OnLostCredentialsButtonClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new SearchResultsListViewPage
-            {
+        //async void OnLostCredentialsButtonClicked(object sender, EventArgs e)
+        //{
+        //    await Navigation.PushAsync(new SearchResultsListViewPage
+        //    {
 
-            });
-        }
+        //    });
+        //}
     }
 }

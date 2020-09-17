@@ -97,7 +97,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.8.0.1364": {
+      "Xamarin.Forms/4.8.0.1451": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -218,10 +218,10 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.8.0.1364": {
+      "Xamarin.Forms.Maps/4.8.0.1451": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.8.0.1364"
+          "Xamarin.Forms": "4.8.0.1451"
         },
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {},
@@ -237,8 +237,8 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1364",
-          "Xamarin.Forms.Maps": "4.8.0.1364",
+          "Xamarin.Forms": "4.8.0.1451",
+          "Xamarin.Forms.Maps": "4.8.0.1451",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -345,7 +345,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.8.0.1364": {
+      "Xamarin.Forms/4.8.0.1451": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -466,10 +466,10 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.8.0.1364": {
+      "Xamarin.Forms.Maps/4.8.0.1451": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.8.0.1364"
+          "Xamarin.Forms": "4.8.0.1451"
         },
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {},
@@ -485,8 +485,8 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1364",
-          "Xamarin.Forms.Maps": "4.8.0.1364",
+          "Xamarin.Forms": "4.8.0.1451",
+          "Xamarin.Forms.Maps": "4.8.0.1451",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -593,7 +593,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.8.0.1364": {
+      "Xamarin.Forms/4.8.0.1451": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -714,10 +714,10 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.8.0.1364": {
+      "Xamarin.Forms.Maps/4.8.0.1451": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.8.0.1364"
+          "Xamarin.Forms": "4.8.0.1451"
         },
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {},
@@ -733,8 +733,8 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1364",
-          "Xamarin.Forms.Maps": "4.8.0.1364",
+          "Xamarin.Forms": "4.8.0.1451",
+          "Xamarin.Forms.Maps": "4.8.0.1451",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -841,7 +841,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.8.0.1364": {
+      "Xamarin.Forms/4.8.0.1451": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -962,10 +962,10 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.8.0.1364": {
+      "Xamarin.Forms.Maps/4.8.0.1451": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.8.0.1364"
+          "Xamarin.Forms": "4.8.0.1451"
         },
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {},
@@ -981,8 +981,8 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1364",
-          "Xamarin.Forms.Maps": "4.8.0.1364",
+          "Xamarin.Forms": "4.8.0.1451",
+          "Xamarin.Forms.Maps": "4.8.0.1451",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -1170,10 +1170,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.8.0.1364": {
-      "sha512": "BZLQDhxXPSu3MbyL4izhGkM2qu0nPaPVEoNZps+cHlgcpA4S5y6f/Kieb6z4S1tyZF1k4a2VPXnyEAFFF78dVA==",
+    "Xamarin.Forms/4.8.0.1451": {
+      "sha512": "3RUzBpcaBxOjufLLqJnuZRGLhzAbVyfe/Pyp0AFY/H1MkCHYxXIRzgB8h6yC9NTs39NLK2SgGiaMbvC4TJ/zFA==",
       "type": "package",
-      "path": "xamarin.forms/4.8.0.1364",
+      "path": "xamarin.forms/4.8.0.1451",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1482,14 +1482,14 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.8.0.1364.nupkg.sha512",
+        "xamarin.forms.4.8.0.1451.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
-    "Xamarin.Forms.Maps/4.8.0.1364": {
-      "sha512": "zKCrvi2gfIsq54aemnsFWlArWq7PYROi+Q5gAJ1zybNJ7v2x6AdY9rJo8Y9dRUUyTVrjbIJ+yon9/zNzDGuMDg==",
+    "Xamarin.Forms.Maps/4.8.0.1451": {
+      "sha512": "oo5hvE7AaVFBWikESuf/sp31u9dh0DoA3Samc9h9O0jcm05uJMq+GNbNQ4rEoflaQIcXSH+5SVx039/RSI1OsA==",
       "type": "package",
-      "path": "xamarin.forms.maps/4.8.0.1364",
+      "path": "xamarin.forms.maps/4.8.0.1451",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1519,7 +1519,7 @@
         "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.pri",
         "lib/uap10.0.16299/Xamarin.Forms.Maps.dll",
-        "xamarin.forms.maps.4.8.0.1364.nupkg.sha512",
+        "xamarin.forms.maps.4.8.0.1451.nupkg.sha512",
         "xamarin.forms.maps.nuspec"
       ]
     },
@@ -1533,8 +1533,8 @@
     "Xamarin.iOS,Version=v1.0": [
       "Drops >= 1.0.0",
       "Xamarin.Essentials >= 1.5.3.2",
-      "Xamarin.Forms >= 4.8.0.1364",
-      "Xamarin.Forms.Maps >= 4.8.0.1364",
+      "Xamarin.Forms >= 4.8.0.1451",
+      "Xamarin.Forms.Maps >= 4.8.0.1451",
       "sqlite-net-pcl >= 1.7.335"
     ]
   },
@@ -1579,11 +1579,11 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.8.0.1364, )"
+            "version": "[4.8.0.1451, )"
           },
           "Xamarin.Forms.Maps": {
             "target": "Package",
-            "version": "[4.8.0.1364, )"
+            "version": "[4.8.0.1451, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",
