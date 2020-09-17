@@ -26,9 +26,9 @@ namespace Drops.Models
 
         public int ID { get; set; }
 
-        private string Username { get; set; }
+        public string Username { get; private set; }
 
-        private string Password { get; set; }
+        public string Password { get; private set; }
 
         private ObservableCollection<Area> OwnedAreas = new ObservableCollection<Area>();
 

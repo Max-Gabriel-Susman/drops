@@ -41,7 +41,6 @@
                                                            Type=RelativeToParent,
                                                            Property=Height,
                                                            Factor=0.075}">
-
                 
                 <Button IsEnabled="True"
                         Clicked="OnAreasButtonClicked"
