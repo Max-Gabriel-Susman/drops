@@ -17,7 +17,7 @@ namespace Drops.ViewModels
 
         public ObservableCollection<Pin> Pins { get; set; } // = DropMap.Drops;
 
-        public ICommand DeleteCommand { get;}
+        public ICommand DeleteCommand { get; }
 
         //public ICommand AddCommand { get; }
 
@@ -48,7 +48,7 @@ namespace Drops.ViewModels
         private void OnDeleteTapped(object obj)
         {
             var drop = obj as Drop;
-            
+
             Drops.Remove(drop);
         }
     }

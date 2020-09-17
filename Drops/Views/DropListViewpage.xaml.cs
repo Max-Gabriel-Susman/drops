@@ -12,8 +12,8 @@ namespace Drops.Views
         {
             InitializeComponent();
 
-            dropsListView.ItemsSource = App.Database.GetDropsAsync().Result;
-
+            // dropsListView.ItemsSource = App.Database.GetDropsAsync().Result;
+            
             //DeleteCommand = new Command(OnDeleteDrop);
 
             BindingContext = this;

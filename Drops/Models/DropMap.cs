@@ -10,11 +10,11 @@ namespace Drops.Models
 {
     public class DropMap : Map
     {
+        //private ObservableCollection<Drop> naughty = new ObservableCollection<Drop>() ;
 
-        private static ObservableCollection<Drop> drops = new ObservableCollection<Drop>();
-
-        [PrimaryKey, AutoIncrement]
-        public static ObservableCollection<Drop> Drops { get; set; }
+        // [PrimaryKey, AutoIncrement]
+        // it was null because it was never instantiated god fucking damn't
+        public static ObservableCollection<Drop> Drops = new ObservableCollection<Drop>();
 
         public DropMap() { }
 
