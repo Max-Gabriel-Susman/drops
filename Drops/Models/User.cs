@@ -34,7 +34,15 @@ namespace Drops.Models
 
         private ObservableCollection<Area> RecievedAreas = new ObservableCollection<Area>();
 
-        private ObservableCollection<Area> AllAreas = new ObservableCollection<Area>();
+        // Currently populated with mockdata
+        public ObservableCollection<Area> AllAreas = new ObservableCollection<Area>()
+        {
+            //new Area(0.0, 0.0),
+
+            //new Area(0.0, 0.0),
+
+            //new Area(0.0, 0.0)
+        };
 
         // Methods
         public void UpdateUsername(string newUsername)
@@ -47,9 +55,9 @@ namespace Drops.Models
             this.Password = newPassword;
         }
 
-        public void CreateArea(double latitude, double longitude)
+        public void CreateArea(double latitude, double longitude, string name)
         {
-            Area area = new Area(latitude, longitude);
+            Area area = new Area(latitude, longitude, name);
 
             OwnedAreas.Add(area);
 

@@ -10,7 +10,7 @@ namespace Drops.Models
     public class Area
     {
         // Constructor
-        public Area(double latitude, double longitude)
+        public Area(double latitude, double longitude, string name)
         {
             this.Latitude = latitude;
 
@@ -20,7 +20,9 @@ namespace Drops.Models
 
             this.DropMap = new DropMap();
 
-            this.ViewHeight = 1.0; 
+            this.ViewHeight = 1.0;
+
+            this.Name = name;
         }
 
         // Properties
@@ -40,6 +42,7 @@ namespace Drops.Models
 
         public DropMap DropMap { get; set; }
 
+        public string Name { get; set; }
         // Methods
         private void FocusDropMap()
         {

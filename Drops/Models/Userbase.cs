@@ -9,13 +9,13 @@ namespace Drops.Models
         // Shared Instance (Mock Data)
         private static ObservableCollection<User> Users = new ObservableCollection<User>()
         {
-            new User("admin", "adminadmin")
+            new User("Admin", "Adminadmin")
         };
 
         public Userbase(){ }
 
         // Determines the validity of credential entry
-        public bool Authentication(string username, string password)
+        public static bool Authentication(string username, string password)
         {
             foreach (User user in Users)
             {
