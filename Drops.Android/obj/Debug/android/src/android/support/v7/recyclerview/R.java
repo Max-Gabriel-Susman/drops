@@ -34,10 +34,10 @@ public final class R {
 		public static final int layout_insetEdge = 0x7f030123;
 		public static final int layout_keyline = 0x7f030124;
 		public static final int reverseLayout = 0x7f030160;
-		public static final int spanCount = 0x7f030176;
-		public static final int stackFromEnd = 0x7f03017c;
-		public static final int statusBarBackground = 0x7f030182;
-		public static final int ttcIndex = 0x7f0301e4;
+		public static final int spanCount = 0x7f030177;
+		public static final int stackFromEnd = 0x7f03017d;
+		public static final int statusBarBackground = 0x7f030183;
+		public static final int ttcIndex = 0x7f0301e5;
 	}
 	public static final class color {
 		public static final int notification_action_color_filter = 0x7f05007a;
@@ -156,7 +156,7 @@ public final class R {
 		public static final int ColorStateListItem_alpha = 2;
 		public static final int ColorStateListItem_android_alpha = 1;
 		public static final int ColorStateListItem_android_color = 0;
-		public static final int[] CoordinatorLayout = new int[] { 0x7f030114, 0x7f030182 };
+		public static final int[] CoordinatorLayout = new int[] { 0x7f030114, 0x7f030183 };
 		public static final int CoordinatorLayout_keylines = 0;
 		public static final int CoordinatorLayout_statusBarBackground = 1;
 		public static final int[] CoordinatorLayout_Layout = new int[] { 0x010100b3, 0x7f03011d, 0x7f03011e, 0x7f03011f, 0x7f030122, 0x7f030123, 0x7f030124 };
@@ -174,7 +174,7 @@ public final class R {
 		public static final int FontFamily_fontProviderFetchTimeout = 3;
 		public static final int FontFamily_fontProviderPackage = 4;
 		public static final int FontFamily_fontProviderQuery = 5;
-		public static final int[] FontFamilyFont = new int[] { 0x01010532, 0x01010533, 0x0101053f, 0x0101056f, 0x01010570, 0x7f0300dc, 0x7f0300e4, 0x7f0300e5, 0x7f0300e6, 0x7f0301e4 };
+		public static final int[] FontFamilyFont = new int[] { 0x01010532, 0x01010533, 0x0101053f, 0x0101056f, 0x01010570, 0x7f0300dc, 0x7f0300e4, 0x7f0300e5, 0x7f0300e6, 0x7f0301e5 };
 		public static final int FontFamilyFont_android_font = 0;
 		public static final int FontFamilyFont_android_fontStyle = 2;
 		public static final int FontFamilyFont_android_fontVariationSettings = 4;
@@ -201,7 +201,7 @@ public final class R {
 		public static final int[] GradientColorItem = new int[] { 0x010101a5, 0x01010514 };
 		public static final int GradientColorItem_android_color = 0;
 		public static final int GradientColorItem_android_offset = 1;
-		public static final int[] RecyclerView = new int[] { 0x010100c4, 0x010100f1, 0x7f0300d5, 0x7f0300d6, 0x7f0300d7, 0x7f0300d8, 0x7f0300d9, 0x7f03011c, 0x7f030160, 0x7f030176, 0x7f03017c };
+		public static final int[] RecyclerView = new int[] { 0x010100c4, 0x010100f1, 0x7f0300d5, 0x7f0300d6, 0x7f0300d7, 0x7f0300d8, 0x7f0300d9, 0x7f03011c, 0x7f030160, 0x7f030177, 0x7f03017d };
 		public static final int RecyclerView_android_descendantFocusability = 1;
 		public static final int RecyclerView_android_orientation = 0;
 		public static final int RecyclerView_fastScrollEnabled = 2;

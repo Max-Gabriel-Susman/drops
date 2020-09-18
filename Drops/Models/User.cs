@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using SQLite;
+
 
 namespace Drops.Models
 {
     public class User
     {
+<<<<<<< HEAD
         // Constructor
         public User(string username, string password, string email)
         {
@@ -12,10 +15,18 @@ namespace Drops.Models
 
             this.IsValid = true;
 
+=======
+        // Constructors
+        public User() { }
+
+        public User(string username, string password)
+        {
+>>>>>>> tmp
             this.Username = username;
 
             this.Password = password;
 
+<<<<<<< HEAD
             this.Email = email;
         }
 
@@ -57,6 +68,74 @@ namespace Drops.Models
         public void ShareArea(Area area)
         {
             this.SharedAreas.Add(area);
+=======
+            this.OwnedAreas = new ObservableCollection<Area>();
+
+            this.RecievedAreas = new ObservableCollection<Area>();
         }
+
+        // Properties
+        [PrimaryKey, AutoIncrement]
+
+        public int ID { get; set; }
+
+        public string Username { get; private set; }
+
+        public string Password { get; private set; }
+
+        private ObservableCollection<Area> OwnedAreas = new ObservableCollection<Area>();
+
+        private ObservableCollection<Area> RecievedAreas = new ObservableCollection<Area>();
+
+        // Currently populated with mockdata
+        public ObservableCollection<Area> AllAreas = new ObservableCollection<Area>()
+        {
+            //new Area(0.0, 0.0),
+
+            //new Area(0.0, 0.0),
+
+            //new Area(0.0, 0.0)
+        };
+
+        // Methods
+        public void UpdateUsername(string newUsername)
+        {
+            this.Username = newUsername;
+>>>>>>> tmp
+        }
+
+        public void UpdatePassword(string newPassword)
+        {
+            this.Password = newPassword;
+        }
+
+        public void CreateArea(double latitude, double longitude, string name)
+        {
+            Area area = new Area(latitude, longitude, name);
+
+            OwnedAreas.Add(area);
+
+            AllAreas.Add(area);
+        }
+
+        public void ReceiveArea(Area area)
+        {
+            RecievedAreas.Add(area);
+
+            AllAreas.Add(area);
+        }
+
+        public ObservableCollection<Area> GetAreas()
+        {
+            // Returns all areas available to the User
+            return this.OwnedAreas;
+        }
+
+        // we want 
+    //    public bool GetArea(int id, out Area areaWithID)
+    //    {
+    //        //return this.OwnedAreas.
+    //        return true;
+    //    }
     }
 }

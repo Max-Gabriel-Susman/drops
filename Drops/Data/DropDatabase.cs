@@ -18,43 +18,43 @@ namespace Drops.Data
         public DropDatabase(string dbPath)
         {
             // database is instantiated
-            _database = new SQLiteAsyncConnection(dbPath);
-            _database.CreateTableAsync<Drop>().Wait();
+            _database = new SQLiteAsyncConnection(dbPath);            
+            _database.CreateTableAsync<User>().Wait();
         }
 
         // CRUD Methods
 
         // Read All
-        public Task<List<Drop>> GetDropsAsync()
+        public Task<List<User>> GetDropsAsync()
         {
-            return _database.Table<Drop>().ToListAsync();
+            return _database.Table<User>().ToListAsync();
         }
 
         // Read
-        public Task<Drop> GetDropAsync(int id)
+        public Task<User> GetDropAsync(int id)
         {
-            return _database.Table<Drop>()
+            return _database.Table<User>()
                             .Where(i => i.ID == id)
                             .FirstOrDefaultAsync();
         }
 
         // Create
-        public Task<int> SaveDropAsync(Drop drop)
+        public Task<int> SaveDropAsync(User user)
         {
-            if (drop.ID != 0)
+            if (user.ID != 0)
             {
-                return _database.UpdateAsync(drop);
+                return _database.UpdateAsync(user);
             }
             else
             {
-                return _database.InsertAsync(drop);
+                return _database.InsertAsync(user);
             }
         }
 
         // Delete
-        public Task<int> DeleteDropAsync(Drop drop)
+        public Task<int> DeleteDropAsync(User user)
         {
-            return _database.DeleteAsync(drop);
+            return _database.DeleteAsync(user);
         }
     }
 }

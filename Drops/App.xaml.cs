@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Drops.Data;
+// using Drops.Data;
 using Drops.Models; // prabably don't need
 using Drops.Views;
 using System.IO;
@@ -11,20 +11,20 @@ namespace Drops
 {
     public partial class App : Application
     {
-        static DropDatabase database;
+        //static DropDatabase database;
 
-        public static DropDatabase Database
-        {
-            get
-            {
-                if (database == null)
-                {
-                    // where is environment defined in notes app?
-                    database = new DropDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "DropMap.db3"));
-                }
-                return database;
-            }
-        }
+        //public static DropDatabase Database
+        //{
+        //    get
+        //    {
+        //        if (database == null)
+        //        {
+        //            // where is environment defined in notes app?
+        //            database = new DropDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "DropMap.db3"));
+        //        }
+        //        return database;
+        //    }
+        //}
 
         // Constructor(s)
         public App()
