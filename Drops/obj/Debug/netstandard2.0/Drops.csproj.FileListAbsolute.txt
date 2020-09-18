@@ -23,3 +23,5 @@
 /Users/MGS/Projects/Drops/Drops/obj/Debug/netstandard2.0/Drops.dll
 /Users/MGS/Projects/Drops/Drops/obj/Debug/netstandard2.0/ref/Drops.dll
 /Users/MGS/Projects/Drops/Drops/obj/Debug/netstandard2.0/Drops.pdb
+/Users/MGS/Projects/Drops/Drops/obj/Debug/netstandard2.0/Drops.csprojAssemblyReference.cache
+/Users/MGS/Projects/Drops/Drops/obj/Debug/netstandard2.0/Views/AreaCreationDetailView.xaml.g.cs
